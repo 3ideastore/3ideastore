@@ -1,0 +1,21 @@
+name: Social Media Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Action to perform'
+        default: 'Update'
+        required: true
+        type: string
+
+jobs:
+  social_media_automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Perform Social Media Action
+        run: |
+          # Add your social media automation commands here
+          # Example: Post to Instagram, Facebook, Twitter, TikTok, etc.
+          echo "Performing social media action: ${{ inputs.name }}"
