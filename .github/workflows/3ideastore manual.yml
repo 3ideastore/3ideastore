@@ -16,6 +16,26 @@ jobs:
     steps:
       - name: Perform Social Media Action
         run: |
-          # Add your social media automation commands here
-          # Example: Post to Instagram, Facebook, Twitter, TikTok, etc.
-          echo "Performing social media action: ${{ inputs.name }}"
+          # Social Media Automation Commands for 3ideastore
+
+          # Example: Post to Instagram
+          # Replace 'YOUR_INSTAGRAM_COMMAND' with the actual command or script
+          YOUR_INSTAGRAM_COMMAND --action=${{ inputs.name }} --content="Your Instagram Content"
+
+          # Example: Post to Facebook
+          # Replace 'YOUR_FACEBOOK_COMMAND' with the actual command or script
+          YOUR_FACEBOOK_COMMAND --action=${{ inputs.name }} --content="Your Facebook Content"
+
+          # Example: Tweet on Twitter
+          # Replace 'YOUR_TWITTER_COMMAND' with the actual command or script
+          YOUR_TWITTER_COMMAND --action=${{ inputs.name }} --content="Your Tweet Content"
+
+          # Example: Upload to TikTok
+          # Replace 'YOUR_TIKTOK_COMMAND' with the actual command or script
+          YOUR_TIKTOK_COMMAND --action=${{ inputs.name }} --content="Your TikTok Content"
+
+          # Example: Custom X Account
+          # Replace 'YOUR_X_ACCOUNT_COMMAND' with the actual command or script
+          YOUR_X_ACCOUNT_COMMAND --action=${{ inputs.name }} --content="Your X Account Content"
+
+          echo "Social media action performed: ${{ inputs.name }}"
